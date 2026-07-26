@@ -1,0 +1,6 @@
+{
+  "name": "Smart PDS System",
+  "description": "Public Distribution System portal for citizens and staff, managing ration bookings, home deliveries, and grievance redressal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
