@@ -100,11 +100,11 @@ export const VisitBookingView: React.FC = () => {
                 </span>
               </label>
 
-              {/* Afternoon */}
+              {/* Late Morning */}
               <label
-                onClick={() => setSelectedSlot('Afternoon (12-2 PM)')}
+                onClick={() => setSelectedSlot('Late Morning (11:30 AM - 1:00 PM)')}
                 className={`relative flex items-center p-3.5 border rounded-xl cursor-pointer transition-all ${
-                  selectedSlot.startsWith('Afternoon')
+                  selectedSlot.startsWith('Late Morning')
                     ? 'border-2 border-[#a00000] bg-[#fff0f0]'
                     : 'border-[#e3beb8] hover:border-[#a00000]'
                 }`}
@@ -112,12 +112,12 @@ export const VisitBookingView: React.FC = () => {
                 <input
                   type="radio"
                   name="timeslot"
-                  checked={selectedSlot.startsWith('Afternoon')}
+                  checked={selectedSlot.startsWith('Late Morning')}
                   onChange={() => {}}
                   className="w-4 h-4 text-[#a00000] accent-[#a00000]"
                 />
                 <div className="ml-3 flex flex-col">
-                  <span className="text-sm font-semibold text-gray-900">Afternoon (12-2 PM)</span>
+                  <span className="text-sm font-semibold text-gray-900">Late Morning (11:30 AM - 1:00 PM)</span>
                   <span className="text-xs text-gray-500">15 slots available</span>
                 </div>
                 <span className="material-symbols-outlined ml-auto text-gray-400">
@@ -127,7 +127,7 @@ export const VisitBookingView: React.FC = () => {
 
               {/* Evening */}
               <label
-                onClick={() => setSelectedSlot('Evening (3-5 PM)')}
+                onClick={() => setSelectedSlot('Evening (3-5:00 PM)')}
                 className={`relative flex items-center p-3.5 border rounded-xl cursor-pointer transition-all ${
                   selectedSlot.startsWith('Evening')
                     ? 'border-2 border-[#a00000] bg-[#fff0f0]'
@@ -142,7 +142,7 @@ export const VisitBookingView: React.FC = () => {
                   className="w-4 h-4 text-[#a00000] accent-[#a00000]"
                 />
                 <div className="ml-3 flex flex-col">
-                  <span className="text-sm font-semibold text-gray-900">Evening (3-5 PM)</span>
+                  <span className="text-sm font-semibold text-gray-900">Evening (3-5:00 PM)</span>
                   <span className="text-xs text-gray-500">4 slots available</span>
                 </div>
                 <span className="material-symbols-outlined ml-auto text-gray-400">

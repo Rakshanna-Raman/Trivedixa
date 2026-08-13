@@ -8,10 +8,13 @@ export const StaffOrdersView: React.FC = () => {
 
   const shopArea = staffUser?.shopArea || 'Velachery 04';
   const shopOrders = bookings.filter((b) => {
-    if (filter === 'SCHEDULED') return b.status === 'SCHEDULED';
-    if (filter === 'COMPLETED') return b.status === 'COMPLETED';
-    return true;
-  });
+  if (b.type === 'home_delivery') return false;
+
+  if (filter === 'SCHEDULED') return b.status === 'SCHEDULED';
+  if (filter === 'COMPLETED') return b.status === 'COMPLETED';
+
+  return true;
+});
 
   const handleVerifyOtp = (bookingId: string, expectedOtp?: string) => {
     const entered = inputOtp[bookingId];
