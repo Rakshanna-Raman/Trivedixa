@@ -4,11 +4,11 @@ import { Booking } from '../types';
 
 export const BookingHistoryView: React.FC = () => {
   const { bookings, openOtpModal } = useApp();
-  const [filter, setFilter] = useState<'all' | 'home_delivery' | 'in_person'>('all');
+  const [filter, setFilter] = useState<'all' | 'in_person'>('all');
   const [showAll, setShowAll] = useState(false);
 
   const filteredBookings = bookings.filter((b) => {
-    if (filter === 'home_delivery') return b.type === 'home_delivery';
+    if (b.type === 'home_delivery') return false;
     if (filter === 'in_person') return b.type === 'in_person';
     return true;
   });
@@ -47,7 +47,7 @@ export const BookingHistoryView: React.FC = () => {
           <div>
             <h2 className="text-2xl font-bold text-[#610000]">Booking History</h2>
             <p className="text-sm text-[#6c5a5a] mt-1">
-              Manage and track your delivery and visit requests.
+              Manage and track your visit requests.
             </p>
           </div>
 
@@ -62,16 +62,6 @@ export const BookingHistoryView: React.FC = () => {
               }`}
             >
               All Bookings
-            </button>
-            <button
-              onClick={() => setFilter('home_delivery')}
-              className={`px-4 py-2 rounded-full text-xs font-semibold whitespace-nowrap transition-colors cursor-pointer ${
-                filter === 'home_delivery'
-                  ? 'bg-[#8b0000] text-white'
-                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-              }`}
-            >
-              Home Delivery
             </button>
             <button
               onClick={() => setFilter('in_person')}
@@ -99,13 +89,13 @@ export const BookingHistoryView: React.FC = () => {
               {/* Icon */}
               <div
                 className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center ${
-                  b.type === 'home_delivery'
-                    ? 'bg-[#f2dada] text-[#8b0000]'
+                  b.type === 'in_person'
+                    ? 'bg-red-100 text-[#8b0000]'
                     : 'bg-red-100 text-[#8b0000]'
                 }`}
               >
                 <span className="material-symbols-outlined">
-                  {b.type === 'home_delivery' ? 'local_shipping' : 'storefront'}
+                  storefront
                 </span>
               </div>
 
@@ -113,7 +103,7 @@ export const BookingHistoryView: React.FC = () => {
               <div className="flex-grow space-y-1">
                 <div className="flex justify-between items-start gap-2">
                   <h3 className="text-base font-bold text-gray-900">
-                    {b.type === 'home_delivery' ? 'Home Delivery' : 'In-Person Visit'}
+                    In-Person Visit
                   </h3>
                   {getStatusBadge(b.status)}
                 </div>
@@ -121,7 +111,7 @@ export const BookingHistoryView: React.FC = () => {
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-2 text-xs">
                   <div>
                     <p className="text-[10px] text-gray-500 uppercase tracking-tight font-semibold">
-                      {b.type === 'home_delivery' ? 'Booking Date' : 'Appointment Date'}
+                      Appointment Date
                     </p>
                     <p className="font-semibold text-gray-800">{b.date}</p>
                   </div>
@@ -135,10 +125,10 @@ export const BookingHistoryView: React.FC = () => {
 
                   <div className="col-span-2 sm:col-span-1">
                     <p className="text-[10px] text-gray-500 uppercase tracking-tight font-semibold">
-                      {b.reason ? 'Reason' : b.type === 'in_person' ? 'Time Slot' : 'FPS Center'}
+                      {b.reason ? 'Reason' : 'Time Slot'}
                     </p>
                     <p className="font-semibold text-gray-800">
-                      {b.reason || b.timeSlot || b.fpsCenter}
+                      {b.reason || b.timeSlot}
                     </p>
                   </div>
                 </div>
