@@ -131,9 +131,8 @@ export const CitizenDashboardView: React.FC = () => {
 
           {/* Footer Info */}
           <p className="text-center text-xs text-gray-500 mt-6 leading-relaxed">
-            Authorized by Department of Civil Supplies
             <br />
-            © 2024 Smart PDS System
+            © Smart PDS System
           </p>
         </div>
       </main>
