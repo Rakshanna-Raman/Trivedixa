@@ -3,7 +3,6 @@ import { useApp } from '../context/AppContext';
 
 export const VisitBookingView: React.FC = () => {
   const { citizenUser, navigateTo, bookVisit, openOtpModal } = useApp();
-    const { citizenUser, navigateTo, bookVisit, openOtpModal } = useApp();
 
   const getIndianDate = () => {
     const now = new Date();
