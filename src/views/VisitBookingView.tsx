@@ -3,17 +3,40 @@ import { useApp } from '../context/AppContext';
 
 export const VisitBookingView: React.FC = () => {
   const { citizenUser, navigateTo, bookVisit, openOtpModal } = useApp();
-  const [selectedDate, setSelectedDate] = useState({ day: 'Tue', date: '13', full: 'Nov 13, 2023' });
+    const { citizenUser, navigateTo, bookVisit, openOtpModal } = useApp();
+
+  const getIndianDate = () => {
+    const now = new Date();
+
+    return new Date(
+      now.toLocaleString('en-US', {
+        timeZone: 'Asia/Kolkata',
+      })
+    );
+  };
+
+  const today = getIndianDate();
+
+  const dates = Array.from({ length: 4 }, (_, index) => {
+    const date = new Date(today);
+    date.setDate(today.getDate() + index + 1);
+
+    return {
+      day: date.toLocaleDateString('en-US', {
+        weekday: 'short',
+      }),
+      date: date.getDate().toString(),
+      full: date.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+    };
+  });
+
+  const [selectedDate, setSelectedDate] = useState(dates[0]);
+
   const [selectedSlot, setSelectedSlot] = useState('Morning (9-11 AM)');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const dates = [
-    { day: 'Mon', date: '12', full: 'Nov 12, 2023' },
-    { day: 'Tue', date: '13', full: 'Nov 13, 2023' },
-    { day: 'Wed', date: '14', full: 'Nov 14, 2023' },
-    { day: 'Thu', date: '15', full: 'Nov 15, 2023' },
-  ];
-
   const handleBookVisit = () => {
     setIsSubmitting(true);
     setTimeout(() => {
