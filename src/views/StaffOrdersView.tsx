@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, JSX } from 'react';
 import { useApp } from '../context/AppContext';
 
 export const StaffOrdersView: React.FC = () => {
@@ -39,7 +39,7 @@ export const StaffOrdersView: React.FC = () => {
               className={`px-3 py-1.5 rounded-lg text-xs font-semibold cursor-pointer ${
                 filter === 'ALL' ? 'bg-[#8b0000] text-white' : 'bg-gray-200 text-gray-700'
               }`}
-            >
+           >
               All
             </button>
             <button

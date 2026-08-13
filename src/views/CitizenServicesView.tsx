@@ -15,16 +15,6 @@ export const CitizenServicesView: React.FC = () => {
 
         {/* Quick Service Cards */}
         <div className="grid grid-cols-2 gap-3 mb-6">
-          <div
-            onClick={() => navigateTo('home_delivery_order')}
-            className="bg-white p-4 rounded-2xl border border-red-100 shadow-xs hover:border-[#8b0000] transition-all cursor-pointer flex flex-col items-center text-center group"
-          >
-            <div className="w-12 h-12 rounded-full bg-[#f2dada] text-[#8b0000] flex items-center justify-center mb-2 group-hover:scale-110 transition-transform">
-              <span className="material-symbols-outlined">local_shipping</span>
-            </div>
-            <span className="text-xs font-bold text-gray-900">Home Delivery</span>
-            <span className="text-[10px] text-gray-500 mt-0.5">Monthly Rations</span>
-          </div>
 
           <div
             onClick={() => navigateTo('visit_booking')}

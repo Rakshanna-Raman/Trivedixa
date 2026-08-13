@@ -145,7 +145,7 @@ export const CitizenLoginView: React.FC = () => {
       {/* Footer */}
       <footer className="mt-auto py-6 text-center px-5 border-t border-red-50">
         <p className="text-xs text-gray-500">
-          © 2024 Smart PDS System. Department of Food & Public Distribution.
+          © 2026 TRIVEDIXA . Smart PDS System.
         </p>
         <div className="flex justify-center gap-4 mt-2 text-xs text-gray-500">
           <a href="#privacy" onClick={(e) => { e.preventDefault(); alert('Smart PDS Privacy Policy: All personal citizen data is encrypted & secured.'); }} className="hover:text-[#8b0000] underline">

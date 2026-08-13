@@ -59,7 +59,7 @@ export const PortalSelectionView: React.FC = () => {
 
       {/* Subtle Footer */}
       <footer className="py-6 text-center text-xs text-gray-500">
-        © 2024 Smart PDS System. Department of Food & Public Distribution.
+        © 2026 TRIVEDIXA . Smart PDS System.
       </footer>
     </div>
   );

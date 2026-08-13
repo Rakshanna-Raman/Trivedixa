@@ -49,7 +49,7 @@ export const StaffDashboardView: React.FC = () => {
 
               <h3 className="text-lg font-bold text-gray-900 mb-1">View Local Orders</h3>
               <p className="text-xs text-[#5a403c] mb-5 leading-relaxed">
-                Manage ration distribution and pending home delivery requests for your area.
+                Manage ration distribution and pending requests for your area.
               </p>
 
               <button

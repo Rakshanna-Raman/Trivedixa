@@ -10,7 +10,6 @@ import { CitizenRegisterView } from './views/CitizenRegisterView';
 import { StaffLoginView } from './views/StaffLoginView';
 import { StaffRegisterView } from './views/StaffRegisterView';
 import { CitizenDashboardView } from './views/CitizenDashboardView';
-import { HomeDeliveryOrderView } from './views/HomeDeliveryOrderView';
 import { VisitBookingView } from './views/VisitBookingView';
 import { BookingHistoryView } from './views/BookingHistoryView';
 import { GrievanceRedressalView } from './views/GrievanceRedressalView';
@@ -37,8 +36,6 @@ const MainRouter: React.FC = () => {
         return <StaffRegisterView />;
       case 'citizen_dashboard':
         return <CitizenDashboardView />;
-      case 'home_delivery_order':
-        return <HomeDeliveryOrderView />;
       case 'visit_booking':
         return <VisitBookingView />;
       case 'booking_history':

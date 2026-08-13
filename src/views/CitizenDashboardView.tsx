@@ -69,21 +69,8 @@ export const CitizenDashboardView: React.FC = () => {
 
           {/* Primary Action Buttons */}
           <div className="flex flex-col gap-3 mt-1">
-            {/* Action Button 1 */}
-            <button
-              onClick={() => navigateTo('home_delivery_order')}
-              className="w-full h-14 bg-[#8b0000] text-white font-semibold text-sm rounded-xl flex items-center justify-between px-5 shadow-md active:scale-[0.98] transition-all hover:bg-red-900 cursor-pointer"
-            >
-              <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>
-                  shopping_cart
-                </span>
-                <span>Online Shopping (Home Delivery)</span>
-              </div>
-              <span className="material-symbols-outlined text-white/60">chevron_right</span>
-            </button>
 
-            {/* Action Button 2 */}
+            {/* Action Button 1 */}
             <button
               onClick={() => navigateTo('visit_booking')}
               className="w-full h-14 bg-[#a00000] text-white font-semibold text-sm rounded-xl flex items-center justify-between px-5 shadow-md active:scale-[0.98] transition-all hover:bg-red-900 cursor-pointer"
@@ -95,7 +82,7 @@ export const CitizenDashboardView: React.FC = () => {
               <span className="material-symbols-outlined text-white/60">chevron_right</span>
             </button>
 
-            {/* Action Button 3 */}
+            {/* Action Button 2 */}
             <button
               onClick={() => navigateTo('grievance_redressal')}
               className="w-full h-14 bg-[#a00000] text-white font-semibold text-sm rounded-xl flex items-center justify-between px-5 shadow-md active:scale-[0.98] transition-all hover:bg-red-900 cursor-pointer"
@@ -107,7 +94,7 @@ export const CitizenDashboardView: React.FC = () => {
               <span className="material-symbols-outlined text-white/60">chevron_right</span>
             </button>
 
-            {/* Action Button 4 */}
+            {/* Action Button 3 */}
             <button
               onClick={() => navigateTo('booking_history')}
               className="w-full h-14 bg-[#a00000] text-white font-semibold text-sm rounded-xl flex items-center justify-between px-5 shadow-md active:scale-[0.98] transition-all hover:bg-red-900 cursor-pointer"
