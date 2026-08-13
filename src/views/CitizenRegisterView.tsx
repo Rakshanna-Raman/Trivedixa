@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useApp } from '../context/AppContext';
 
-export const VisitBookingView: React.FC = () => {
+export const CitizenRegisterView: React.FC = () => {
   const { citizenUser, navigateTo, bookVisit, openOtpModal } = useApp();
 
   const today = new Date();
