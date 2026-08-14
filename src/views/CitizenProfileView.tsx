@@ -62,7 +62,7 @@ export const CitizenProfileView: React.FC = () => {
           <div className="space-y-2 text-xs">
             <div className="p-2.5 bg-gray-50 rounded-xl flex justify-between items-center">
               <div>
-                <span className="font-bold text-gray-800 block">Rakshanna (Head)</span>
+                <span className="font-bold text-gray-800 block">Yashna A (Head)</span>
                 <span className="text-[10px] text-gray-400">Female | 28 Yrs</span>
               </div>
               <span className="px-2 py-0.5 bg-green-100 text-green-800 font-semibold text-[10px] rounded-md">KYC Verified</span>
@@ -70,8 +70,8 @@ export const CitizenProfileView: React.FC = () => {
 
             <div className="p-2.5 bg-gray-50 rounded-xl flex justify-between items-center">
               <div>
-                <span className="font-bold text-gray-800 block">Siddharth R (Spouse)</span>
-                <span className="text-[10px] text-gray-400">Male | 31 Yrs</span>
+                <span className="font-bold text-gray-800 block">Adharsh V (Spouse)</span>
+                <span className="text-[10px] text-gray-400">Male | 30 Yrs</span>
               </div>
               <span className="px-2 py-0.5 bg-green-100 text-green-800 font-semibold text-[10px] rounded-md">KYC Verified</span>
             </div>

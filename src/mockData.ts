@@ -2,7 +2,7 @@ import { CitizenUser, StaffUser, Booking, Complaint } from './types';
 
 export const INITIAL_CITIZEN: CitizenUser = {
   id: 'cit-101',
-  fullName: 'Rakshanna',
+  fullName: 'Yashna A',
   rationCardNumber: '123456789',
   mobileNumber: '98765xxxxx',
   cardType: 'priority',
@@ -84,7 +84,7 @@ export const INITIAL_COMPLAINTS: Complaint[] = [
     id: 'c-1',
     trackingId: 'PDS-2023-88421',
     citizenId: 'cit-101',
-    citizenName: 'Raman',
+    citizenName: 'Monika',
     shopArea: 'Velachery 04',
     category: 'quality',
     categoryLabel: 'Quality Issue (Food Grains)',
@@ -108,7 +108,7 @@ export const INITIAL_COMPLAINTS: Complaint[] = [
     id: 'c-4',
     trackingId: 'PDS-2023-50021',
     citizenId: 'cit-104',
-    citizenName: 'Sujatha',
+    citizenName: 'Reckshna',
     shopArea: 'Velachery 04',
     category: 'behavior',
     categoryLabel: 'Staff Behavior',
