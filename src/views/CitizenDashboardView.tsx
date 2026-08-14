@@ -56,7 +56,7 @@ export const CitizenDashboardView: React.FC = () => {
             </div>
 
             <h2 className="text-xl font-bold text-[#610000]">
-              Citizen: {citizenUser?.fullName || 'Rakshanna'}
+              Citizen: {citizenUser?.fullName || 'Yashna A'}
             </h2>
 
             <div className="flex items-center gap-2 px-3 py-1 bg-[#fff0f0] rounded-full border border-red-100">

@@ -185,7 +185,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
       id: `c-${Date.now()}`,
       trackingId,
       citizenId: citizenUser?.id || 'cit-101',
-      citizenName: citizenUser?.fullName || 'Rakshanna',
+      citizenName: citizenUser?.fullName || 'Yashna A',
       shopArea: citizenUser?.shopArea || 'Velachery 04',
       category,
       categoryLabel: getCategoryLabel(category),

@@ -23,7 +23,7 @@ export const CitizenProfileView: React.FC = () => {
             </div>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900">{citizenUser?.fullName || 'Rakshanna'}</h2>
+          <h2 className="text-xl font-bold text-gray-900">{citizenUser?.fullName || 'Yashna A'}</h2>
           <p className="text-xs text-gray-500 mt-0.5">Ration Card Holder</p>
 
           <span className="mt-2 px-3 py-1 bg-[#fff0f0] text-[#8b0000] font-bold text-xs rounded-full border border-red-100">
